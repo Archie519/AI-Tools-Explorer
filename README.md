@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# ⭐ AI Tools Explorer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An interactive full-stack web app to browse, search, and favorite AI tools.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🔧 Tech Stack
 
-### `npm start`
+- 🖥️ Frontend: React (Vite or CRA)
+- 🔗 Backend: Node.js + Express
+- 📦 Data: Static JSON
+- ⚙️ Chart Library: Recharts
+- 🎉 Extras: Confetti, Dark Mode, Favorites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Features
 
-### `npm test`
+- 🔍 Browse & filter AI tools by category
+- ❤️ Favorite tools (stored in memory)
+- 💡 Dark Mode toggle
+- 📊 Chart showing number of tools by category
+- 🔠 Search tools by name
+- 🎉 Confetti animation on adding to favorites
+- 📱 Mobile responsive UI
+- ⚠️ Full error handling and loading spinners
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📁 Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+/client # React frontend
+/server # Express backend
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🖼️ Screenshots
 
-### `npm run eject`
+### 🏠 Home Page
+![Home Screenshot](./screenshots/home.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### ❤️ Favorites Page
+![Favorites Screenshot](./screenshots/favorites.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📦 How to Run
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 🔹 Backend (server)
 
-## Learn More
+```bash
+cd server
+npm install
+node index.js
+# Runs on http://localhost:5000
+🔹 Frontend (client)
+bash
+Copy
+Edit
+cd client
+npm install
+npm start
+# Runs on http://localhost:3000
+🔄 API Endpoints
+GET /api/tools — Get all tools
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+GET /api/tools?category=Writing — Filter tools
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+POST /api/favorites — Add to favorites
 
-### Code Splitting
+GET /api/favorites — List favorites
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+DELETE /api/favorites/:id — Remove from favorite
