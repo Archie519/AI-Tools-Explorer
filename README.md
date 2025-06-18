@@ -42,6 +42,12 @@ An interactive full-stack web app to browse, search, and favorite AI tools.
 ### ❤️ Favorites Page
 ![Home](./screenshots/home.png)
 
+### 🌙 Dark Mode
+![Dark Mode](./screenshots/dark-mode.png)
+
+### 📊 Category Chart
+![Chart](./screenshots/chart.png)
+
 
 ---
 
