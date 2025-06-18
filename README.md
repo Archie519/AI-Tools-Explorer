@@ -37,10 +37,11 @@ An interactive full-stack web app to browse, search, and favorite AI tools.
 ## 🖼️ Screenshots
 
 ### 🏠 Home Page
-![Home Screenshot](./screenshots/home.png)
+"C:\Users\91998\Pictures\Screenshots\Screenshot 2025-06-18 162533.png"
+"C:\Users\91998\Pictures\Screenshots\Screenshot 2025-06-18 162550.png"
 
 ### ❤️ Favorites Page
-![Favorites Screenshot](./screenshots/favorites.png)
+"C:\Users\91998\Pictures\Screenshots\Screenshot 2025-06-18 162603.png"
 
 ---
 
